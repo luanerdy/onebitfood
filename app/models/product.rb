@@ -2,5 +2,7 @@ class Product < ApplicationRecord
   belongs_to :product_category
   has_many :order_products
 
-  validades :name, :price, presence: true
+  validates :name, :price, presence: true
+
+  has_one_attached :image
 end

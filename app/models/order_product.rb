@@ -2,5 +2,5 @@ class OrderProduct < ApplicationRecord
   belongs_to :order
   belongs_to :product
 
-  validades :quantity, presence: true
+  validates :quantity, presence: true
 end
